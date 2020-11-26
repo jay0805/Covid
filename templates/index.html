@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 align="center" >{% block title %}COVID-19 prediction Model{% endblock %}</h1>
+    
+    <div>
+    	<h3> Here, we have implemented machine learning model where it used for COVID-19 predicton from the symptoms in a person.</h3>
+    </div>
+    <div class=imgage align="center" >
+        <h3> Showing how our data looks like</h3>
+    	<img src="/static/ss/1.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> describing our data  as a binary</h3>
+    	<img src="/static/ss/2.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> Condition can be either 0 or 1</h3>
+    	<img src="/static/ss/3.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3>Correlation chart</h3>
+    	<img src="/static/ss/4.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> Taking 7 most related input to our model  </h3>
+    	<img src="/static/ss/5.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> Splitting our data into train and test using train_test_split </h3>
+    	<img src="/static/ss/6.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> Testing data set </h3>
+    	<img src="/static/ss/7.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> Predicting condition using logistic regression </h3>
+    	<img src="/static/ss/8.jpg" width="100%">
+    </div><br>
+    <div class=imgage align="center" >
+        <h3> creating our model.pkl file and loading it </h3>
+        <img src="/static/ss/9.jpg" width="100%">
+    </div><br>
+{% endblock %}

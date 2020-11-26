@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="post">
+        
+    <div class="form-group">
+        <h1 >COVID'19 PREDICTION</h1>
+        <h5 >Enter 1(YES) or 0(No) for following symptoms</h5><br><br>
+        <h4 class="form-title">Fever</h5>
+        <input type="text" name="input"
+               placeholder="SYMPTOM 1" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+        <h4 class="form-title">Tiredness</h5>
+        <input type="text" name="input"
+               placeholder="SYMPTOM 2" class="form-control"
+               value="{{ request.form['input'] }}" ></input>
+        <h4 class="form-title">Dry-Cough</h5>
+        <input type="text" name="input"
+               placeholder="SYMPTOM 3" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+    
+        <h4 class="form-title">Difficulty-in-Breathing</h5>
+        <input type="text" name="input"
+               placeholder="SYMPTOM 4" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+        <h4 class="form-title">Pains</h5>
+        <input type="text" name="input"
+               placeholder="SYMPTOM 5" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+        <h4 class="form-title">Diarrhea</h5>
+        <input type="text" name="input"
+               placeholder="SYMPTOM 6" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+        <h4 class="form-title">Age_60+</h5>
+        <input type="text" name="input"
+               placeholder="AGE 60+" class="form-control"
+               value="{{ request.form['input'] }}"></input>
+    </div><br>
+    <div class="form-group" align="center">
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </div>
+    <br><br>
+    <div class="form-group" align="center">
+        <label for="label">Predicted Label</label><br>
+        <textarea name="label" placeholder="Post label"
+                  class="form-control"></textarea>
+    </div>
+    <div class="form-group" align="center"><br>
+        <label for="prob">Predicted Probability</label><br>
+        <textarea name="prob" placeholder="Post prob"
+                  class="form-control"></textarea>
+    </div>
+  div class=imgage align="center" >
+        <h3>This is how my app.py file looks like</h3>
+      <img src="/static/ss/10.jpg" width="100%">
+    </div><br>
+</form>
+{{ prediction_text }}
+<!--    <p>{{ post }}</p>-->
+{% endblock %}
